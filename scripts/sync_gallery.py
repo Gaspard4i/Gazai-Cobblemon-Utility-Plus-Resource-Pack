@@ -14,7 +14,7 @@ API = "https://api.modrinth.com/v2"
 TOKEN = os.environ["MODRINTH_TOKEN"]
 PROJECT = os.environ["MODRINTH_PROJECT_ID"]
 DESCRIPTIONS = {
-    "all-items": "Every retextured item.",
+    "all-items": "Every item of the pack. The special items (Alpha Candy, Random Fossil and Shiny Fossil) are only available in the mod Cobblemon Utility Items, they are not part of Cobblemon Utility+.",
     "stat-candies": "The stat candies, one family per stat.",
     "whole-pokemon": "Items that change a whole Pokemon.",
     "identity": "Shiny, gender, Poke Ball and evolution stage.",
