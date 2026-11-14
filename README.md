@@ -15,7 +15,7 @@ Resource pack that retextures and renames the items from the
 Languages: English, French, Spanish, German, Italian.
 
 ## Structure
-- `assets/cobblemon_utility/textures/item/*.png` — item textures (32×32).
+- `assets/cobblemon_utility/textures/item/*.png` — item textures (16×16).
 - `assets/cobblemon_utility/lang/*.json` — item display names per language.
 - `pack.mcmeta` — pack_format 34 (MC 1.21.1).
 - `pack.png` — pack icon.
