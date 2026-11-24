@@ -14,7 +14,7 @@ API = "https://api.modrinth.com/v2"
 TOKEN = os.environ["MODRINTH_TOKEN"]
 PROJECT = os.environ["MODRINTH_PROJECT_ID"]
 DESCRIPTIONS = {
-    "changed-items": "The 20 items renamed and redrawn in version 2.0.0, before and after. The other items of the pack are unchanged.",
+    "changed-items": "The 20 items renamed and redrawn in version 2.0.0. The other items of the pack are unchanged.",
 }
 
 
