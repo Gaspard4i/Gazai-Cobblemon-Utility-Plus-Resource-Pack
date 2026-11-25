@@ -31,6 +31,11 @@ def call(method, path, data=None, content_type=None, query=None):
         raise SystemExit(f"{method} {path} failed: {error.code} {error.read().decode(errors='replace')}")
 
 
+SUMMARY = "New names and sprites for the items of Cobblemon Utility+ (Mystery, Moldy, Rotten and more)."
+with open(os.path.join(ROOT, "DESCRIPTION.md"), encoding="utf-8") as handle:
+    call("PATCH", f"/project/{PROJECT}", json.dumps({"description": SUMMARY, "body": handle.read()}).encode(), "application/json")
+print("description updated")
+
 folder = os.path.join(ROOT, "gallery")
 files = sorted(f for f in os.listdir(folder) if f.endswith(".png"))
 for entry in call("GET", f"/project/{PROJECT}").get("gallery", []):
